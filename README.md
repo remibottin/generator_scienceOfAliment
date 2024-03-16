@@ -1,1 +1,1 @@
-# remibottin-generator_scienceOfAliment
+# generator_scienceOfAliment_game

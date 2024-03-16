@@ -6,22 +6,29 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./ressources/index.css">
+        <link rel="stylesheet" href="ressources/reset.css">
         <title>Generator - Science Of Aliments</title>
         <script src="./index.js" async></script>
     </head>
     <body>
         <header>
-            <h1>Science des Aliments</h1>
-            <p>Formea Santé</p>
-            <p>Create by Rémi Bottin</p>
+            <h1>Référence Nutritionnelle pour la population (RNP)</h1>
+            <h2>Science des Aliments</h2>
         </header>
         <div id="quizblock"></div>
 
             <script type="text/JavaScript">
                 let MyQuiz = new Questions("quizblock");
-                MyQuiz.generateQuiz();
+                MyQuiz.generateQuiz();≤
             </script>
 
         <input type="button" onclick="MyQuiz.ScoreIt();" value="Voir mon résultat !" class="buttonquiz">
+
+        <input type="button" onclick="location.reload()" value="Rejouer !" class="refreshbutton">
+
+        <footer>
+            <img src="ressources/logo.png" alt="logoFormeaSanté">
+            <p>copyright © 2024 Rémi Bottin all rights reserved</p>
+        </footer>
     </body>
 </html>
