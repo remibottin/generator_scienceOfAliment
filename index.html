@@ -6,20 +6,28 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./ressources/index.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="ressources/reset.css">
         <title>Generator - Science Of Aliments</title>
         <script src="./index.js" async></script>
     </head>
     <body>
         <header>
-            <h1>Référence Nutritionnelle pour la population (RNP)</h1>
-            <h2>Science des Aliments</h2>
-        </header>
+        <div class="content" >
+            <div class="logo">
+                <h1>Référence Nutritionnelle pour la population (RNP)</h1>
+                <p>Quiz - Testez vos connaissances</p>
+            </div>
+                <nav class="logo">
+                    <a href="https://www.formeasante-ecole.com/"><img src="ressources/logo.png" alt="logo" class="menu-logo"></a>
+                </nav>
+            </div>
+      </header>
         <div id="quizblock"></div>
 
             <script type="text/JavaScript">
                 let MyQuiz = new Questions("quizblock");
-                MyQuiz.generateQuiz();≤
+                MyQuiz.generateQuiz();
             </script>
 
         <input type="button" onclick="MyQuiz.ScoreIt();" value="Voir mon résultat !" class="buttonquiz">
@@ -27,7 +35,6 @@
         <input type="button" onclick="location.reload()" value="Rejouer !" class="refreshbutton">
 
         <footer>
-            <img src="ressources/logo.png" alt="logoFormeaSanté">
             <p>copyright © 2024 Rémi Bottin all rights reserved</p>
         </footer>
     </body>
