@@ -313,5 +313,52 @@ function Questions(divname) {
    this.QChoice[59] = `+ 500`;
 
    this.QAnswer[19] = 3;
+
+      // Lipides
+
+      this.QText[20] = "Combien de lipides pour un enfant de 1 à 3 ans ?";
+
+      this.QChoice[60] = '60 à 76 %';
+      this.QChoice[61] = '45 à 50 %';
+      this.QChoice[62] = '20 à 35 %';
+   
+      this.QAnswer[20] = 2;
+   
+      this.QText[21] = "Combien de lipides pour une enfant / ado de 4 à 17 ans ?";
+   
+      this.QChoice[63] = '20 à 35 %'
+      this.QChoice[64] = '30 à 45 %'
+      this.QChoice[65] = '40 à 55 %'
+   
+      this.QAnswer[21] = 1;
+
+      this.QText[22] = "Combien de lipides pour un adulte ?";
+   
+      this.QChoice[66] = '35 à 40 %'
+      this.QChoice[67] = '67 à 78 %'
+      this.QChoice[68] = '40 à 50 %'
+   
+      this.QAnswer[22] = 1;
+
+         // Glucides
+
+      this.QText[23] = "Combien de glucides pour un enfant de 1 à 3 ans ?";
+
+      this.QChoice[69] = '50 à 55%';
+      this.QChoice[70] = '45 à 50 %';
+      this.QChoice[71] = '40 à 55% %';
+   
+      this.QAnswer[23] = 2;
+   
+      this.QText[24] = "Combien de glucides pour un enfant / ado / adulte ?";
+   
+      this.QChoice[72] = `"40 à 55%
+      HLG : 4-7 ans : 60g / 7 - 10  ans : 75g / > 10 ans : 100g"`;
+      this.QChoice[73] = `"40 à 55%
+      HLG : 4-7 ans : 60g / 7 - 10  ans : 90g / > 10 ans : 100g"`;
+      this.QChoice[74] = `"45 à 65%
+      HLG : 4-7 ans : 20g / 7 - 10  ans : 75g / > 10 ans : 100g"`;
+   
+      this.QAnswer[24] = 1;
    
 }
