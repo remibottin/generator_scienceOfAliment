@@ -2,9 +2,48 @@
     margin: 0;
     padding: 0;
 }
+@media screen and (max-width: 940px){ /* Iphone screen size */
+    header .content{
+        display: none;
+        text-align: center;
+        width: 100%;
+    }
+    header .content h1{
+        padding-left: 0rem;
+    
+    }
+    header .content p{
+        padding-left: 0rem;
+    }
+    header .menu-logo{
+        display: none;
+    }
+    td{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    tr strong{
+        font-size: 0.8rem;
+        margin: 10px auto;
+    }
+    #answer0,#answer1,#answer2,#answer3{
+        width: 250px;
+    }
+    tr td{
+        margin-bottom: 10px;
+    }
+    section #quizblock{
+        width: 95%;
+        box-shadow: 2px 2px 20px 2px rgba(0,0,0,0.30);
+        }
+    footer p{
+        margin-top: 100px;
+    }
+}
 body{
     font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     color: #F2F2F2;
     background-color: #F2F2F2;
@@ -12,13 +51,10 @@ body{
 header .content{
     display: flex;
     align-items: center;
-    padding-left:1.8rem;
+    
+    width: 100%;
 }
-.logo{
-    padding-right: 2rem;
-    float: right;
-    display: block;
-}
+
 .menu-logo{
     display: flex;
     width: 70px;
@@ -43,10 +79,12 @@ header .content{
     color: #F2D541;
     font-size: 1.5rem;
     font-weight: 500;
+    padding-left: 1.8rem;
     margin-bottom: 5px;
 }
 .content p{
     font-weight: 400;
+    padding-left: 1.8rem;
     font-size: 1.2rem;
 }
 #quizblock{
@@ -123,21 +161,3 @@ tr td{
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 940px){ /* Iphone screen size */
-    header .content{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-    }
-    .menu-logo{
-        display: none;
-    }
-    #quizblock{
-        margin: 50px 10px;
-    }
-    footer p{
-        margin-top: 100px;
-        font-size: 0.6rem;
-    }
-}
