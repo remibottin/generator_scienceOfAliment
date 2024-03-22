@@ -1,0 +1,22 @@
+{
+  "name": "science_of_aliments_generator",
+  "version": "1.0.0",
+  "description": "generator of quizz for a school project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remibottin/generator_scienceOfAliment.git"
+  },
+  "author": "Rémi Bottin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remibottin/generator_scienceOfAliment/issues"
+  },
+  "homepage": "https://github.com/remibottin/generator_scienceOfAliment#readme",
+  "script": {
+    "test": "mocha"
+  }
+}

@@ -75,20 +75,19 @@ Questions.prototype.ScoreIt = function() {
    } else {
       for (let Ix=0; Ix<4; Ix++) {
          if (this.Answer[Ix] == this.thisAns[Ix]) {
-            document.getElementById("check" + Ix).checked = false;
+            document.getElementById("check" + Ix).checked = true;
             count++;
          } else {
-            document.getElementById("check" + Ix).checked = true;
+            document.getElementById("check" + Ix).checked = false;
          }
       }
       alert("Bravo vous avez " + count + " réponses juste.");
    }
    return count;
 }
-
-// refresh the game button and add a next party 
-
-
+function reset(){
+    document.getElementById("reset").style.backgroundColor = "#FFF";
+}
 
 // data
 
@@ -195,8 +194,8 @@ function Questions(divname) {
   this.QAnswer[8] = 1;
 
 
-  //Proétines Enfants
-  this.QText[9] = "Combien de proétines pour un enfant de 1 à 3 ans ?";
+  //Protéines Enfants
+  this.QText[9] = "Combien de protéines pour un enfant de 1 à 3 ans ?";
 
   this.QChoice[27] = "6 à 15%";
   this.QChoice[28] = "6 à 40%";
@@ -205,7 +204,7 @@ function Questions(divname) {
   this.QAnswer[9] = 1;
 
  
-  this.QText[10] = "Combien de proétines pour un enfant de 4 à 5 ans ?";
+  this.QText[10] = "Combien de protéines pour un enfant de 4 à 5 ans ?";
 
   this.QChoice[30] = "1 à 6%";
   this.QChoice[31] = "6 à 34%";
@@ -214,7 +213,7 @@ function Questions(divname) {
   this.QAnswer[10] = 3;
   
 
-  this.QText[11] = "Combien de proétines pour un enfant de 6 à 9 ans ?";
+  this.QText[11] = "Combien de protéines pour un enfant de 6 à 9 ans ?";
 
   this.QChoice[33] = "7 à 17%";
   this.QChoice[34] = "7 à 19%";
@@ -224,7 +223,7 @@ function Questions(divname) {
 
 
   //Proétines Ados
-  this.QText[12] = "Combien de proétines pour un ado de 10 à 13 ans ?";
+  this.QText[12] = "Combien de protéines pour un ado de 10 à 13 ans ?";
 
   this.QChoice[36] = "19 à 20%";
   this.QChoice[37] = "9 à 29%";
@@ -233,7 +232,7 @@ function Questions(divname) {
   this.QAnswer[12] = 3;
 
   
-  this.QText[13] = "Combien de proétines pour un ado de 14 à 17 ans ?";
+  this.QText[13] = "Combien de protéines pour un ado de 14 à 17 ans ?";
 
   this.QChoice[39] = "10 à 20%";
   this.QChoice[40] = "8 à 24%";
@@ -242,7 +241,7 @@ function Questions(divname) {
   this.QAnswer[13] = 1;
   
   //Proétines Adultes + Femmes Grossesses
-  this.QText[14] = "Combien de proétines pour un adulte ?";
+  this.QText[14] = "Combien de protéines pour un adulte ?";
 
   this.QChoice[42] = `"10 à 12% NAP MOYEN 
   12 à 25% NAP <1,3"`;
@@ -254,7 +253,7 @@ function Questions(divname) {
   this.QAnswer[14] = 2;
 
   
-  this.QText[15] = "Combien de proétines pour une femme ( Grossesses / Allaitantes ) ?";
+  this.QText[15] = "Combien de protéines pour une femme ( Grossesses / Allaitantes ) ?";
 
   this.QChoice[45] = "12 à 22 %";
   this.QChoice[46] = "30% à 33%";
@@ -264,7 +263,7 @@ function Questions(divname) {
 
   //Proétines Aged
   
-  this.QText[16] = "Combien de proétines pour un(e) Femme / Homme âgé ?";
+  this.QText[16] = "Combien de protéines pour un(e) Femme / Homme âgé ?";
 
   this.QChoice[48] = ` 10 à 20% 
   > 65 :  15 à 20 % AET
@@ -279,7 +278,7 @@ function Questions(divname) {
   this.QAnswer[16] = 1;
 
   
-  this.QText[17] = "Combien de proétines pour une femme ménauposé ?";
+  this.QText[17] = "Combien de protéines pour une femme ménauposé ?";
 
   this.QChoice[51] = `<65 ans : 18 à 20 % 
   0,83g/ kg`;

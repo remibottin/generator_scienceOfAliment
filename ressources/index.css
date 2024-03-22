@@ -30,8 +30,12 @@ body{
         align-items: center;
         text-align: center;
     }
+    .buttonquiz,.refreshbutton{
+        font-size: 1.2rem;
+        
+    }
     tr strong{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         margin: 10px auto;
     }
     #answer0,#answer1,#answer2,#answer3{
